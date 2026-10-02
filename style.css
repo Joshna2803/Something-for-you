@@ -1,0 +1,1562 @@
+/* ================================================= */
+/* BASIC RESET */
+/* ================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #fff5f7;
+}
+
+
+/* ================================================= */
+/* PAGE 1 */
+/* ================================================= */
+
+.opening-page {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background:
+        repeating-linear-gradient(
+            0deg,
+            #dff5f7 0px,
+            #dff5f7 45px,
+            #cdecef 46px,
+            #cdecef 47px
+        );
+}
+
+
+/* ================================================= */
+/* OPENING CARD */
+/* ================================================= */
+
+.opening-card {
+    width: min(90%, 650px);
+    height: 85vh;
+    max-height: 750px;
+
+    background: #fffaf1;
+
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 50px 30px;
+
+    transform: rotate(-1deg);
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+
+/* ================================================= */
+/* TAPE */
+/* ================================================= */
+
+.tape {
+    position: absolute;
+
+    width: 160px;
+    height: 38px;
+
+    background: rgba(255, 191, 204, 0.75);
+
+    z-index: 5;
+}
+
+.tape-top {
+    top: 15px;
+    left: 50%;
+
+    transform:
+        translateX(-50%)
+        rotate(-3deg);
+}
+
+
+/* ================================================= */
+/* OPENING TEXT */
+/* ================================================= */
+
+.little-heading {
+    font-family: "Caveat", cursive;
+
+    color: #df7186;
+
+    font-size: 30px;
+
+    margin-bottom: 25px;
+}
+
+
+.opening-card h1 {
+    font-family: "Caveat", cursive;
+
+    font-size: clamp(65px, 10vw, 110px);
+
+    line-height: 0.78;
+
+    color: #e45e78;
+
+    transform: rotate(-2deg);
+}
+
+
+.opening-card h1 span {
+    font-size: 55px;
+}
+
+
+/* ================================================= */
+/* BIG HEART */
+/* ================================================= */
+
+.big-heart {
+    font-size: 95px;
+
+    color: #ee7790;
+
+    margin-top: 30px;
+
+    animation: heartbeat 1.5s infinite;
+
+    text-shadow:
+        5px 5px 0 #ffd4dc;
+}
+
+
+@keyframes heartbeat {
+
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.12);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+/* ================================================= */
+/* MAIN BUTTON */
+/* ================================================= */
+
+.main-button {
+    border: none;
+
+    background: #e77a90;
+
+    color: white;
+
+    padding: 13px 30px;
+
+    border-radius: 40px;
+
+    font-family: "Caveat", cursive;
+
+    font-size: 26px;
+
+    margin-top: 30px;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 5px 0 #c65b70;
+
+    transition: 0.2s;
+}
+
+
+.main-button:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 8px 0 #c65b70;
+}
+
+
+/* ================================================= */
+/* FLOATING DECORATIONS */
+/* ================================================= */
+
+.floating-decoration {
+    position: fixed;
+
+    z-index: 10;
+
+    pointer-events: none;
+}
+
+
+.heart {
+    top: 12%;
+    left: 8%;
+
+    font-size: 65px;
+
+    color: #ee7890;
+
+    transform: rotate(-20deg);
+}
+
+
+.heart-two {
+    top: auto;
+    left: auto;
+
+    bottom: 15%;
+    right: 8%;
+
+    transform: rotate(15deg);
+}
+
+
+.star {
+    top: 18%;
+    right: 15%;
+
+    font-size: 45px;
+
+    color: #e4ae3e;
+}
+
+
+.star-two {
+    top: auto;
+    right: auto;
+
+    bottom: 18%;
+    left: 15%;
+}
+
+
+.flower {
+    bottom: 10%;
+    right: 20%;
+
+    font-size: 35px;
+
+    color: #e78a9d;
+}
+
+
+/* ================================================= */
+/* PAGE 2 */
+/* ================================================= */
+
+.page2 {
+    width: 100%;
+    height: 100vh;
+
+    overflow: hidden;
+
+    position: relative;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 30px 20px;
+
+    background:
+        repeating-linear-gradient(
+            90deg,
+            #fff0f3 0px,
+            #fff0f3 55px,
+            #ffe4e9 56px,
+            #ffe4e9 58px
+        );
+}
+
+
+/* ================================================= */
+/* PAGE 2 TITLE */
+/* ================================================= */
+
+.page2-title {
+    text-align: center;
+
+    margin-bottom: 25px;
+}
+
+
+.page2-title p {
+    font-size: 13px;
+
+    letter-spacing: 4px;
+
+    color: #999;
+}
+
+
+.page2-title h1 {
+    font-family: "Caveat", cursive;
+
+    font-size: 70px;
+
+    color: #df657d;
+}
+
+
+/* ================================================= */
+/* TWO PHOTO CONTAINER */
+/* ================================================= */
+
+.page2 .two-photo-container {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 40px;
+
+    margin-bottom: 10px;
+}
+
+
+/* ================================================= */
+/* POLAROID */
+/* ================================================= */
+
+.polaroid {
+    background: white;
+
+    padding: 12px 12px 25px;
+
+    width: 260px;
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.15);
+
+    text-align: center;
+}
+
+
+.polaroid img {
+    width: 100%;
+
+    height: 270px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+.polaroid p {
+    font-family: "Caveat", cursive;
+
+    font-size: 23px;
+
+    margin-top: 12px;
+
+    color: #555;
+}
+
+
+.photo-left {
+    transform: rotate(-6deg);
+}
+
+
+.photo-right {
+    transform: rotate(6deg);
+}
+
+
+/* ================================================= */
+/* PAGE 3 */
+/* ================================================= */
+
+.page3 {
+    width: 100%;
+    height: 100vh;
+
+    overflow: hidden;
+
+    position: relative;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 20px;
+
+    background: #fff5dc;
+}
+
+
+/* ================================================= */
+/* PAGE 3 HEADING */
+/* ================================================= */
+
+.favorite-heading {
+    text-align: center;
+
+    z-index: 5;
+
+    margin-bottom: 5px;
+}
+
+
+.favorite-heading p {
+    font-family: "Caveat", cursive;
+
+    font-size: 28px;
+
+    color: #777;
+}
+
+
+.favorite-heading h1 {
+    font-family: "Caveat", cursive;
+
+    font-size: clamp(55px, 8vw, 90px);
+
+    line-height: 0.8;
+
+    color: #555;
+}
+
+
+.favorite-heading h1 span {
+    color: #e3647c;
+}
+
+
+/* ================================================= */
+/* FOUR PHOTO COLLAGE */
+/* ================================================= */
+
+.polaroid-collage {
+    width: min(850px, 90%);
+
+    height: 430px;
+
+    position: relative;
+
+    margin-top: 5px;
+}
+
+
+.collage-photo {
+    position: absolute;
+
+    width: 190px;
+
+    background: white;
+
+    padding: 10px 10px 20px;
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.15);
+
+    text-align: center;
+}
+
+
+.collage-photo img {
+    width: 100%;
+
+    height: 190px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+.collage-photo p {
+    font-family: "Caveat", cursive;
+
+    font-size: 21px;
+
+    margin-top: 8px;
+
+    color: #555;
+}
+
+
+.photo-one {
+    top: 0;
+
+    left: 7%;
+
+    transform: rotate(-9deg);
+}
+
+
+.photo-two {
+    top: 0;
+
+    right: 7%;
+
+    transform: rotate(8deg);
+}
+
+
+.photo-three {
+    bottom: 0;
+
+    left: 22%;
+
+    transform: rotate(5deg);
+}
+
+
+.photo-four {
+    bottom: 0;
+
+    right: 22%;
+
+    transform: rotate(-7deg);
+}
+
+
+/* ================================================= */
+/* PAGE 4 — GIFTS */
+/* ================================================= */
+
+.page4 {
+    width: 100%;
+    height: 100vh;
+
+    overflow: hidden;
+
+    position: relative;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 30px 20px;
+
+    background:
+        repeating-linear-gradient(
+            0deg,
+            #e9f6f5 0px,
+            #e9f6f5 50px,
+            #dff0ee 51px,
+            #dff0ee 52px
+        );
+}
+
+
+/* ================================================= */
+/* GIFT HEADING */
+/* ================================================= */
+
+.gift-heading {
+    text-align: center;
+
+    margin-bottom: 35px;
+}
+
+
+.gift-heading p {
+    font-family: "Caveat", cursive;
+
+    font-size: 28px;
+
+    color: #777;
+}
+
+
+.gift-heading h1 {
+    font-family: "Caveat", cursive;
+
+    font-size: 70px;
+
+    color: #e1667f;
+}
+
+
+.gift-heading span {
+    color: #777;
+
+    font-size: 14px;
+}
+
+
+/* ================================================= */
+/* GIFT BOXES */
+/* ================================================= */
+
+.gift-container {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 25px;
+
+    width: min(900px, 95%);
+}
+
+
+.gift-box {
+    border: none;
+
+    background: #fff;
+
+    min-height: 190px;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.12);
+
+    cursor: pointer;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    font-family: "Caveat", cursive;
+
+    font-size: 25px;
+
+    color: #555;
+
+    transition: 0.3s;
+}
+
+
+.gift-box:hover {
+    transform:
+        translateY(-10px)
+        rotate(-2deg);
+}
+
+
+.gift-emoji {
+    font-size: 70px;
+}
+
+
+.gift-ribbon {
+    font-size: 25px;
+}
+
+
+/* ================================================= */
+/* GIFT POPUP */
+/* ================================================= */
+
+.gift-popup {
+    position: fixed;
+
+    inset: 0;
+
+    background:
+        rgba(50, 30, 40, 0.55);
+
+    z-index: 100;
+
+    display: none;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 20px;
+}
+
+
+.gift-popup.active {
+    display: flex;
+
+    animation:
+        popupBackground 0.3s ease;
+}
+
+
+@keyframes popupBackground {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* ================================================= */
+/* POPUP CONTENT */
+/* ================================================= */
+
+.popup-content {
+    background: #fffaf2;
+
+    width: min(700px, 95%);
+
+    max-height: 90vh;
+
+    overflow-y: auto;
+
+    border-radius: 10px;
+
+    padding: 60px 40px 40px;
+
+    text-align: center;
+
+    position: relative;
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.2);
+
+    animation:
+        popupOpen 0.4s ease;
+}
+
+
+@keyframes popupOpen {
+    from {
+        transform:
+            scale(0.7)
+            rotate(-5deg);
+    }
+
+    to {
+        transform:
+            scale(1)
+            rotate(0);
+    }
+}
+
+
+/* ================================================= */
+/* CLOSE BUTTON */
+/* ================================================= */
+
+.close-button {
+    position: absolute;
+
+    top: 15px;
+
+    right: 20px;
+
+    border: none;
+
+    background: none;
+
+    font-size: 40px;
+
+    color: #777;
+
+    cursor: pointer;
+}
+
+
+/* ================================================= */
+/* GIFT CONTENT */
+/* ================================================= */
+
+.gift-content {
+    display: none;
+}
+
+
+.gift-content.active {
+    display: block;
+}
+
+
+.gift-content h2 {
+    font-family: "Caveat", cursive;
+
+    font-size: 65px;
+
+    color: #e3647d;
+
+    margin-bottom: 20px;
+}
+
+
+.popup-big-text {
+    font-family: "Caveat", cursive;
+
+    font-size: 32px;
+
+    line-height: 1.2;
+
+    color: #555;
+}
+
+
+.gift-content p {
+    font-size: 17px;
+
+    line-height: 1.7;
+
+    color: #555;
+}
+
+
+/* ================================================= */
+/* GIFT 1 */
+/* ================================================= */
+
+.popup-decoration {
+    font-size: 70px;
+
+    color: #ef7890;
+}
+
+
+.gift-photo {
+    width: 230px;
+
+    margin: 25px auto;
+
+    background: white;
+
+    padding: 10px 10px 20px;
+
+    transform: rotate(3deg);
+
+    box-shadow:
+        0 7px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+.gift-photo img {
+    width: 100%;
+
+    height: 250px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+.straws {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    margin: 30px 0;
+}
+
+
+.straws span {
+    font-size: 50px;
+
+    color: #e77b91;
+}
+
+
+/* ================================================= */
+/* GIFT 2 — MUSIC MEMORY */
+/* ================================================= */
+
+.music-memory-photo {
+    width: 260px;
+    height: 260px;
+
+    margin: 20px auto;
+
+    padding: 8px;
+
+    background: white;
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.12);
+
+    transform: rotate(-2deg);
+}
+
+
+.music-memory-photo img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* ================================================= */
+/* VINYL */
+/* ================================================= */
+
+.gift-content .vinyl {
+    width: 110px;
+    height: 110px;
+
+    margin: 20px auto;
+
+    border-radius: 50%;
+
+    background:
+        repeating-radial-gradient(
+            circle,
+            #222 0px,
+            #222 3px,
+            #333 4px,
+            #222 6px
+        );
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    animation:
+        spin 5s linear infinite;
+}
+
+
+.gift-content .vinyl-center {
+    width: 35px;
+    height: 35px;
+
+    border-radius: 50%;
+
+    background: #e1667f;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: white;
+
+    font-size: 18px;
+}
+
+
+/* ================================================= */
+/* MUSIC COVERS + QR */
+/* ================================================= */
+
+.music-covers {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: flex-start;
+
+    gap: 18px;
+
+    margin: 25px auto;
+
+    flex-wrap: wrap;
+}
+
+
+.music-item {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    width: 120px;
+}
+
+
+.music-cover {
+    width: 85px;
+    height: 85px;
+
+    padding: 4px;
+
+    background: white;
+
+    box-shadow:
+        0 5px 12px rgba(0, 0, 0, 0.12);
+}
+
+
+.music-cover img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* Slight scrapbook effect */
+
+.music-item:nth-child(1) .music-cover {
+    transform: rotate(-6deg);
+}
+
+
+.music-item:nth-child(2) .music-cover {
+    transform: translateY(-8px);
+}
+
+
+.music-item:nth-child(3) .music-cover {
+    transform: rotate(6deg);
+}
+
+
+/* ================================================= */
+/* QR CODE */
+/* ================================================= */
+
+.qr-code {
+    margin: 15px auto 5px;
+
+    padding: 6px;
+
+    background: white;
+
+    border: 1px solid #eee;
+
+    width: fit-content;
+}
+
+
+.qr-code img {
+    display: block;
+}
+
+
+/* ================================================= */
+/* SCAN TEXT */
+/* ================================================= */
+
+.scan-text {
+    font-family: "Caveat", cursive !important;
+
+    font-size: 18px !important;
+
+    color: #e1667f !important;
+
+    margin: 5px 0 15px !important;
+}
+
+
+/* ================================================= */
+/* MUSIC ENDING */
+/* ================================================= */
+
+.music-ending {
+    font-family: "Caveat", cursive !important;
+
+    font-size: 28px !important;
+
+    color: #e1667f !important;
+
+    margin: 30px auto;
+
+    max-width: 450px;
+}
+
+
+/* ================================================= */
+/* VINYL ANIMATION */
+/* ================================================= */
+
+@keyframes spin {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* ================================================= */
+/* GIFT 3 */
+/* ================================================= */
+
+.pretty-boy-decoration {
+    font-size: 35px;
+
+    color: #e36a82;
+
+    margin-bottom: 10px;
+}
+
+
+.pretty-boy-photo {
+    width: 250px;
+
+    margin: 25px auto;
+
+    background: white;
+
+    padding: 10px 10px 20px;
+
+    transform: rotate(-3deg);
+
+    box-shadow:
+        0 7px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+.pretty-boy-photo img {
+    width: 100%;
+
+    height: 280px;
+
+    object-fit: cover;
+}
+
+
+/* ================================================= */
+/* GIFT 4 — DINNER DATE */
+/* ================================================= */
+
+.date-decoration {
+    font-size: 50px;
+
+    margin-bottom: 20px;
+}
+
+
+.date-buttons {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    margin-top: 30px;
+}
+
+
+.yes-button,
+.no-button {
+    border: none;
+
+    padding: 12px 30px;
+
+    border-radius: 30px;
+
+    font-family: "Caveat", cursive;
+
+    font-size: 25px;
+
+    cursor: pointer;
+}
+
+
+.yes-button {
+    background: #e7768c;
+
+    color: white;
+}
+
+
+.no-button {
+    background: #ddd;
+
+    color: #555;
+}
+
+
+.date-response {
+    margin-top: 30px;
+
+    font-family: "Caveat", cursive;
+
+    font-size: 32px !important;
+
+    color: #e2637d !important;
+}
+
+
+/* ================================================= */
+/* SMALL BUTTON */
+/* ================================================= */
+
+.small-button {
+    border: none;
+
+    background: #e77a90;
+
+    color: white;
+
+    padding: 10px 25px;
+
+    border-radius: 30px;
+
+    font-family: "Caveat", cursive;
+
+    font-size: 23px;
+
+    cursor: pointer;
+
+    margin-top: 25px;
+}
+
+
+/* ================================================= */
+/* GO BACK BUTTON */
+/* ================================================= */
+
+.back-button {
+    border: none;
+
+    background: transparent;
+
+    color: #777;
+
+    font-family: "Caveat", cursive;
+
+    font-size: 24px;
+
+    margin-top: 30px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+.back-button:hover {
+    color: #e1667f;
+
+    transform: translateX(-5px);
+}
+
+
+/* ================================================= */
+/* MOBILE */
+/* ================================================= */
+
+@media (max-width: 700px) {
+
+    /* PAGE 1 */
+
+    .opening-card {
+        width: 90%;
+
+        height: 90vh;
+
+        padding: 40px 20px;
+    }
+
+
+    .opening-card h1 {
+        font-size: 65px;
+    }
+
+
+    .big-heart {
+        font-size: 70px;
+
+        margin-top: 20px;
+    }
+
+
+    .little-heading {
+        font-size: 25px;
+    }
+
+
+    .main-button {
+        font-size: 23px;
+
+        padding: 11px 25px;
+    }
+
+
+    .heart {
+        left: 3%;
+
+        font-size: 45px;
+    }
+
+
+    .heart-two {
+        right: 3%;
+
+        font-size: 45px;
+    }
+
+
+    .star {
+        right: 5%;
+
+        font-size: 35px;
+    }
+
+
+    .flower {
+        right: 8%;
+
+        font-size: 30px;
+    }
+
+
+    /* PAGE 2 */
+
+    .page2 {
+        padding: 20px 10px;
+    }
+
+
+    .page2-title {
+        margin-bottom: 15px;
+    }
+
+
+    .page2-title h1 {
+        font-size: 52px;
+    }
+
+
+    .page2 .two-photo-container {
+        gap: 15px;
+    }
+
+
+    .page2 .polaroid {
+        width: 165px;
+
+        padding: 8px 8px 15px;
+    }
+
+
+    .page2 .polaroid img {
+        height: 165px;
+    }
+
+
+    .page2 .polaroid p {
+        font-size: 18px;
+    }
+
+
+    /* PAGE 3 */
+
+    .page3 {
+        padding: 15px;
+    }
+
+
+    .favorite-heading h1 {
+        font-size: 55px;
+    }
+
+
+    .favorite-heading p {
+        font-size: 22px;
+    }
+
+
+    .polaroid-collage {
+        width: 100%;
+
+        height: 400px;
+    }
+
+
+    .collage-photo {
+        width: 140px;
+
+        padding: 7px 7px 15px;
+    }
+
+
+    .collage-photo img {
+        height: 140px;
+    }
+
+
+    .collage-photo p {
+        font-size: 17px;
+    }
+
+
+    .photo-one {
+        left: 3%;
+    }
+
+
+    .photo-two {
+        right: 3%;
+    }
+
+
+    .photo-three {
+        left: 10%;
+    }
+
+
+    .photo-four {
+        right: 10%;
+    }
+
+
+    /* PAGE 4 */
+
+    .gift-heading {
+        margin-bottom: 20px;
+    }
+
+
+    .gift-heading h1 {
+        font-size: 52px;
+    }
+
+
+    .gift-container {
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        gap: 15px;
+    }
+
+
+    .gift-box {
+        min-height: 145px;
+
+        font-size: 21px;
+    }
+
+
+    .gift-emoji {
+        font-size: 50px;
+    }
+
+
+    /* POPUP */
+
+    .popup-content {
+        width: 95%;
+
+        max-height: 90vh;
+
+        padding:
+            50px 20px 25px;
+    }
+
+
+    .gift-content h2 {
+        font-size: 48px;
+    }
+
+
+    .popup-big-text {
+        font-size: 27px;
+    }
+
+
+    .gift-photo {
+        width: 190px;
+    }
+
+
+    .gift-photo img {
+        height: 210px;
+    }
+
+
+    /* MUSIC */
+
+    .music-memory-photo {
+        width: 210px;
+        height: 210px;
+    }
+
+
+    .music-covers {
+        gap: 5px;
+    }
+
+
+    .music-item {
+        width: 95px;
+    }
+
+
+    .music-cover {
+        width: 70px;
+        height: 70px;
+    }
+
+
+    .qr-code {
+        padding: 4px;
+
+        transform: scale(0.85);
+    }
+
+
+    .scan-text {
+        font-size: 16px !important;
+    }
+
+
+    .music-ending {
+        font-size: 24px !important;
+    }
+
+
+    .back-button {
+        font-size: 21px;
+
+        margin-top: 20px;
+    }
+}

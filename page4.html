@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Something For You ❤️</title>
+
+
+    <!-- GOOGLE FONTS -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Poppins:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+
+    <!-- CSS -->
+
+    <link
+        rel="stylesheet"
+        href="style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- ================================================= -->
+<!-- PAGE 4 -->
+<!-- ================================================= -->
+
+<main class="page4">
+
+
+    <!-- HEADING -->
+
+    <div class="gift-heading">
+
+        <p>
+            okay, Mahh Gorgeouss...
+        </p>
+
+        <h1>
+            A little something for you 💗
+        </h1>
+
+        <span>
+            you can open them in any order ♡
+        </span>
+
+    </div>
+
+
+
+    <!-- ================================================= -->
+    <!-- GIFT BOXES -->
+    <!-- ================================================= -->
+
+    <div class="gift-container">
+
+
+        <!-- GIFT 1 -->
+
+        <button
+            class="gift-box"
+            onclick="openGift('gift1')">
+
+            <div class="gift-emoji">
+                🎁
+            </div>
+
+            <div>
+                Bhayyyyy
+            </div>
+
+            <div class="gift-ribbon">
+                🎀
+            </div>
+
+        </button>
+
+
+
+        <!-- GIFT 2 -->
+
+        <button
+            class="gift-box"
+            onclick="openGift('gift2')">
+
+            <div class="gift-emoji">
+                🎵
+            </div>
+
+            <div>
+                Ghoneee
+            </div>
+
+            <div class="gift-ribbon">
+                🎀
+            </div>
+
+        </button>
+
+
+
+        <!-- GIFT 3 -->
+
+        <button
+            class="gift-box"
+            onclick="openGift('gift3')">
+
+            <div class="gift-emoji">
+                💗
+            </div>
+
+            <div>
+                Bujjiii
+            </div>
+
+            <div class="gift-ribbon">
+                🎀
+            </div>
+
+        </button>
+
+
+
+        <!-- GIFT 4 -->
+
+        <button
+            class="gift-box"
+            onclick="openGift('gift4')">
+
+            <div class="gift-emoji">
+                💌
+            </div>
+
+            <div>
+                Honeyyyy
+            </div>
+
+            <div class="gift-ribbon">
+                🎀
+            </div>
+
+        </button>
+
+    </div>
+
+
+
+    <!-- BACK BUTTON -->
+
+    <button
+        class="back-button"
+        onclick="window.location.href='page3.html'">
+
+        ← Go Back
+
+    </button>
+
+
+</main>
+
+
+
+<!-- ================================================= -->
+<!-- GIFT POPUP -->
+<!-- ================================================= -->
+
+<div
+    class="gift-popup"
+    id="giftPopup">
+
+
+    <div class="popup-content">
+
+
+        <!-- CLOSE BUTTON -->
+
+        <button
+            class="close-button"
+            onclick="closeGift()">
+
+            ×
+
+        </button>
+
+
+
+        <!-- ================================================= -->
+        <!-- GIFT 1 -->
+        <!-- ================================================= -->
+
+        <div
+            class="gift-content"
+            id="gift1">
+
+
+            <div class="popup-decoration">
+                ♡
+            </div>
+
+
+            <h2>
+                I Love You ❤️
+            </h2>
+
+
+            <div class="gift-photo">
+
+                <img
+                    src="images/photo9.jpeg"
+                    alt="">
+
+            </div>
+
+
+            <p class="popup-big-text">
+                more than I probably know how to explain. ❤️
+            </p>
+
+
+            <p>
+                You somehow became my favourite part of every day.
+            </p>
+
+
+            <button
+                class="small-button"
+                onclick="closeGift()">
+
+                Back to gifts
+
+            </button>
+
+        </div>
+
+
+
+        <!-- ================================================= -->
+        <!-- GIFT 2 -->
+        <!-- ================================================= -->
+
+        <div
+            class="gift-content"
+            id="gift2">
+
+
+            <div class="popup-decoration">
+                ♪ ♡ ♪
+            </div>
+
+
+            <h2>
+                Songs That Remind Me Of You 🎵
+            </h2>
+
+
+            <p class="popup-big-text">
+                Every song somehow reminds me of you ❤️
+            </p>
+
+
+
+            <!-- COUPLE PHOTO -->
+
+            <div class="music-memory-photo">
+
+                <img
+                    src="images/photo7.jpeg"
+                    alt="">
+
+            </div>
+
+
+
+            <!-- VINYL -->
+
+            <div class="vinyl">
+
+                <div class="vinyl-center">
+                    ♫
+                </div>
+
+            </div>
+
+
+
+            <!-- ================================================= -->
+            <!-- QR CODES -->
+            <!-- ================================================= -->
+
+            <div class="music-covers">
+
+
+                <!-- QR 1 -->
+
+                <div class="music-item">
+
+                    <div
+                        class="qr-code"
+                        id="qrMusic1">
+                    </div>
+
+                </div>
+
+
+
+                <!-- QR 2 -->
+
+                <div class="music-item">
+
+                    <div
+                        class="qr-code"
+                        id="qrMusic2">
+                    </div>
+
+                </div>
+
+
+
+                <!-- QR 3 -->
+
+                <div class="music-item">
+
+                    <div
+                        class="qr-code"
+                        id="qrMusic3">
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- ONE SCAN MESSAGE -->
+
+            <p class="scan-text">
+                scan me 🎧
+            </p>
+
+
+
+            <!-- ENDING -->
+
+            <p class="music-ending">
+                Every time these songs play,
+                I think of you beboo. ❤️
+            </p>
+
+
+
+            <button
+                class="small-button"
+                onclick="closeGift()">
+
+                Back to gifts
+
+            </button>
+
+        </div>
+
+
+
+        <!-- ================================================= -->
+        <!-- GIFT 3 -->
+        <!-- ================================================= -->
+
+        <div
+            class="gift-content"
+            id="gift3">
+
+
+            <div class="pretty-boy-decoration">
+                ♡ ✦ ♡
+            </div>
+
+
+            <h2>
+                Palakkad  
+            </h2>
+
+            <h3>
+                Your birthday trip, our first trip together, and the beginning of us being more than just friends. 🫶
+            </h3>
+
+
+            <div class="pretty-boy-photo">
+
+                <img
+                    src="images/photo8.jpeg"
+                    alt="">
+
+            </div>
+
+
+
+            <p>
+                You're ridiculously cute,
+                annoyingly lovable,
+                and somehow became my favourite person to be stuck with. 🤭❤️
+            </p>
+
+
+            <button
+                class="small-button"
+                onclick="closeGift()">
+
+                Back to gifts
+
+            </button>
+
+        </div>
+
+
+
+        <!-- ================================================= -->
+        <!-- GIFT 4 -->
+        <!-- ================================================= -->
+
+        <div
+            class="gift-content"
+            id="gift4">
+
+
+            <div class="date-decoration">
+                🍝 ❤️
+            </div>
+
+
+            <h2>
+                One last question...
+            </h2>
+
+
+            <p class="popup-big-text">
+                Do you wanna go on a dinner date with me? 🥹
+            </p>
+
+
+
+            <!-- YES / NO -->
+
+            <div class="date-buttons">
+
+
+                <button
+                    class="yes-button"
+                    onclick="sayYes()">
+
+                    YES ❤️
+
+                </button>
+
+
+                <button
+                    class="no-button"
+                    onclick="sayNo()">
+
+                    NO 😭
+
+                </button>
+
+
+            </div>
+
+
+
+            <div
+                class="date-response"
+                id="date-response">
+            </div>
+
+
+
+            <button
+                class="small-button"
+                onclick="closeGift()">
+
+                Back to gifts
+
+            </button>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+
+
+<!-- ================================================= -->
+<!-- QR CODE LIBRARY -->
+<!-- ================================================= -->
+
+<script
+    src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js">
+</script>
+
+
+
+<!-- JAVASCRIPT -->
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
